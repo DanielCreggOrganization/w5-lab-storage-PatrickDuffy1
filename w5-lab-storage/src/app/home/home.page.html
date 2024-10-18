@@ -1,0 +1,25 @@
+<!-- src/app/home/home.page.html -->
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Storage Demo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-item>
+    <ion-label position="floating">Key</ion-label>
+    <ion-input [(ngModel)]="key"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Value</ion-label>
+    <ion-input [(ngModel)]="value"></ion-input>
+  </ion-item>
+  <ion-button expand="full" (click)="setItem()">Set Item</ion-button>
+  <ion-button expand="full" (click)="getItem()">Get Item</ion-button>
+  <ion-button expand="full" (click)="remove()">Remove Item</ion-button>
+  <ion-button expand="full" (click)="clear()">Clear</ion-button>
+  <ion-button expand="full" (click)="keys()">Get keys</ion-button>
+  <ion-button expand="full" (click)="length()">Get Length</ion-button>
+  <ion-button expand="full" (click)="forEach()">Get Items</ion-button>
+  <p>{{ output }}</p>
+</ion-content>
